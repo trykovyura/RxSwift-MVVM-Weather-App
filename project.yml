@@ -1,0 +1,64 @@
+name: weather
+
+############
+# Options
+############
+
+options:
+  minimumXcodeGenVersion: 2.10
+  groupSortPosition: top
+  generateEmptyDirectories: true
+  xcodeVersion: 11.0
+  deploymentTarget:
+    iOS: "11.0"
+
+############
+# Configs
+############
+
+configs:
+  Debug: debug
+  Release: release
+
+############
+# Targets
+############
+
+targets:
+  weather:
+    type: application
+    platform: iOS
+    deploymentTarget:
+      iOS: 11.0
+    scheme: {}
+    settings:
+      base:
+        SWIFT_VERSION: 4.2
+        TARGETED_DEVICE_FAMILY: 1
+        IPHONEOS_DEPLOYMENT_TARGET: 11.0
+        PRODUCT_BUNDLE_IDENTIFIER: "ru.trykov.weather"
+        ENABLE_BITCODE: false
+        CURRENT_PROJECT_VERSION: 1
+        VERSIONING_SYSTEM: "apple-generic"
+        USE_SWIFT_RESPONSE_FILE: true
+    sources:
+      - path: weather
+        excludes:
+          - Info.plist
+    preBuildScripts:
+      - script: "if which \"${PODS_ROOT}/SwiftLint/swiftlint\" >/dev/null; then\n\"${PODS_ROOT}/SwiftLint/swiftlint\" --strict\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n"
+        name: Swiftlint
+    info:
+      path: weather/Supporting Files/Info.plist
+      properties:
+        CFBundleDisplayName: "Weather"
+        CFBundleShortVersionString: "0.0.1"
+        CFBundleVersion: "10"
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        UILaunchStoryboardName: LaunchScreen
+        UIUserInterfaceStyle: Light
+        UIStatusBarStyle: UIStatusBarStyleLightContent
+        LSRequiresIPhoneOS: true
+        ITSAppUsesNonExemptEncryption: false
+        NSAppTransportSecurity:
+          NSAllowsArbitraryLoads: true

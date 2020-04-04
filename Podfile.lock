@@ -1,0 +1,105 @@
+PODS:
+  - Alamofire (5.0.3)
+  - Differentiator (4.0.1)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - Moya/RxSwift (14.0.0):
+    - Moya/Core
+    - RxSwift (~> 5.0)
+  - "NSObject+Rx (5.0.2)":
+    - RxSwift (~> 5.0)
+  - Realm (3.17.3):
+    - Realm/Headers (= 3.17.3)
+  - Realm/Headers (3.17.3)
+  - RealmSwift (3.17.3):
+    - Realm (= 3.17.3)
+  - RxCocoa (5.1.0):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxDataSourcesExt (0.2.6):
+    - RxDataSources (~> 4)
+    - RxSwift (~> 5)
+  - RxFlow (2.7.0):
+    - RxCocoa (>= 5.0.0)
+    - RxSwift (>= 5.0.0)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.0)
+  - RxSwiftExt (5.2.0):
+    - RxSwiftExt/Core (= 5.2.0)
+    - RxSwiftExt/RxCocoa (= 5.2.0)
+  - RxSwiftExt/Core (5.2.0):
+    - RxSwift (~> 5.0)
+  - RxSwiftExt/RxCocoa (5.2.0):
+    - RxCocoa (~> 5.0)
+    - RxSwiftExt/Core
+  - SnapKit (4.2.0)
+  - SwiftLint (0.33.1)
+  - Swinject (2.6.2)
+
+DEPENDENCIES:
+  - Moya/RxSwift (~> 14.0.0)
+  - "NSObject+Rx (~> 5.0.2)"
+  - RealmSwift (~> 3.17.0)
+  - RxCocoa (~> 5.0)
+  - RxDataSources (~> 4.0)
+  - RxDataSourcesExt (from `https://github.com/trykovyura/RxDataSourcesExt`)
+  - RxFlow (~> 2.7.0)
+  - RxSwift (~> 5.0)
+  - RxSwiftExt (~> 5.2.0)
+  - SnapKit (~> 4.2.0)
+  - SwiftLint (~> 0.33.0)
+  - Swinject (~> 2.6.2)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Differentiator
+    - Moya
+    - "NSObject+Rx"
+    - Realm
+    - RealmSwift
+    - RxCocoa
+    - RxDataSources
+    - RxFlow
+    - RxRelay
+    - RxSwift
+    - RxSwiftExt
+    - SnapKit
+    - SwiftLint
+    - Swinject
+
+EXTERNAL SOURCES:
+  RxDataSourcesExt:
+    :git: https://github.com/trykovyura/RxDataSourcesExt
+
+CHECKOUT OPTIONS:
+  RxDataSourcesExt:
+    :commit: e255c273cec1706da57e84170a7d65b24d01ebee
+    :git: https://github.com/trykovyura/RxDataSourcesExt
+
+SPEC CHECKSUMS:
+  Alamofire: 7c444099d8ccb6ae7e6fc8f343646d3821d8679b
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  "NSObject+Rx": 2eb2cf51fd1c554118449a7fbc36e4cd620b9e94
+  Realm: 5a1d9d47bfc101dd597668b1a8af4288a2557f6d
+  RealmSwift: b7fdc2d18616621c31df5c7a398a45a2163f8eb0
+  RxCocoa: 13d2a4d7546a34b8ececae8c281e4ea1dbb94f2b
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
+  RxDataSourcesExt: fdd679e3d64bd6aaa9f3683080cc53c1ba4ba271
+  RxFlow: 605ef6364d7e937bea8f9507a1e99a431cdc2493
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: ad5874f24bb0dbffd1e9bb8443604e3578796c7a
+  RxSwiftExt: 4ca80336f43c28f11a2825cdd2fc61dd6c044697
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SwiftLint: 9fc1143bbacec37f94994a7d0d2a85b2154b6294
+  Swinject: cf7458774b1b00323080a9c67e47a1ee7f9d2af1
+
+PODFILE CHECKSUM: 6f272234dbf550b900a299d29b1ce2665866f0cd
+
+COCOAPODS: 1.9.1
